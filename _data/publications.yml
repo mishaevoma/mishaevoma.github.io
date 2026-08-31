@@ -1,0 +1,7 @@
+- title: "Implicit Meta-Learning in Small Transformer Models: Insights from a Toy Task"
+  url: "https://openreview.net/forum?id=rvGeznBEjw"
+  description: "Why networks internalize reliable-looking data more than noise — the effect appears even in single-layer models. BlackboxNLP @ EMNLP 2024."
+
+- title: "Split Activation Networks for Neural Fields"
+  url: "https://hdl.handle.net/20.500.14570/3943"
+  description: "Master's thesis on activation-splitting architectures for neural fields. Ukrainian Catholic University, 2023."

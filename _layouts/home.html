@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ '/assets/me.jpg' | absolute_url }}">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #6f6f6f;
+      --line: #e4e4e4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #131415;
+        --fg: #ececec;
+        --muted: #9c9c9c;
+        --line: #2c2d2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+    .avatar {
+      display: block;
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 38%;
+    }
+    h1 {
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      margin: 22px 0 4px;
+    }
+    .tagline {
+      color: var(--muted);
+      margin: 0 0 22px;
+    }
+    .links { margin: 0; }
+    .links a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1px;
+    }
+    .links a:hover { border-color: var(--fg); }
+    .links .sep { color: var(--muted); margin: 0 9px; }
+    h2 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: var(--muted);
+      margin: 52px 0 18px;
+    }
+    ul.items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.items li { margin: 0 0 20px; }
+    ul.items li:last-child { margin-bottom: 0; }
+    .item-title a {
+      color: var(--fg);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1px;
+    }
+    .item-title a:hover { border-color: var(--fg); }
+    .item-desc {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+{{ content }}
+  </main>
+</body>
+</html>

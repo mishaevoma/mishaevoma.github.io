@@ -1,0 +1,19 @@
+- name: einsum3d
+  url: "https://github.com/manifoldhiker/einsum3d"
+  description: "Visualize your einsum in 3D — an interactive view of tensor contractions."
+
+- name: neural-playground
+  url: "https://github.com/manifoldhiker/neural-playground"
+  description: "Mechanistic interpretability of toy transformers doing reasoning tasks."
+
+- name: codenames-ai
+  url: "https://github.com/manifoldhiker/codenames-ai"
+  description: "The Codenames board game played by multi-agent LLMs."
+
+- name: voice-agents-stegonography
+  url: "https://github.com/manifoldhiker/voice-agents-stegonography"
+  description: "Exploring LLM voice agents passing secret messages to each other in Google Meet."
+
+- name: snake-reinforced
+  url: "https://github.com/manifoldhiker/snake-reinforced"
+  description: "Policy gradients and PPO learning to play Snake."
